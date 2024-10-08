@@ -1,0 +1,52 @@
+//====================================================================================================
+// The cursor element
+@media (min-width: 1024px) {
+    body {
+        overflow-x: hidden;
+    }
+    body,
+    body a,
+    body * {
+        cursor: url("../img/icons/dote.png"), pointer;
+    }
+    .cursor {
+        left: -50px;
+        top: -50px;
+        position: absolute;
+        z-index: 100;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #ffa900;
+        border-radius: 50%;
+        transition: 100ms ease-out;
+        // animation: cursorAnim 0.7s infinite alternate;
+        pointer-events: none;
+    }
+
+    .expand {
+        animation: cursorAnim3 0.5s forwards alternate;
+        border: 3px solid rgba(255, 167, 34, 0.3);
+    }
+    @keyframes cursorAnim {
+        from {
+            transform: scale(1);
+        }
+        to {
+            transform: scale(0.8);
+        }
+    }
+
+    @keyframes cursorAnim3 {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.6);
+            border: 5px solid rgba(255, 167, 34, 0.3);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+}
+//====================================================================================================

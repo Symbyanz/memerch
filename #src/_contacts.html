@@ -1,0 +1,105 @@
+<main class="page__default contacts-page">
+    <div class="page__default__content">
+        <div class="page__title">Контакты</div>
+        <div class="contacts__tabs contacts-tabs">
+            <div class="contacts-tabs__item" data-target="contact-map">Контактные данные</div>
+            <div class="contacts-tabs__item active" data-target="contact-form">Связаться с нами</div>
+        </div>
+
+        <div class="contacts-tab" id="contact-map" style="direction: none;">
+            <div class="contacts__content contacts-content">
+                <div class="contacts-content__text">
+                    <p>
+                        <b>Адрес:</b>
+                        614015, Россия, Пермь, ул. Газеты Звезда, 24а, офис 310
+                    </p>
+                    <p>
+                        <b>Email:</b>
+                        <a href="mailto:info@memerch">info@memerch.store</a>
+                    </p>
+                    <p>
+                        <b>Социальные сети:</b>
+                        <a href="https://vk.com/memerchstore" target="_blank">vkontakte</a><br>
+                        <a href="https://www.instagram.com/memerch.store/" target="_blank">instagram</a>
+                    </p>
+                </div>
+                <div class="contacts-content__map">
+                    <script type="text/javascript" charset="utf-8" async
+                        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3503fb1d7b58c1683bf487874e887d08e523b86a7bd33326040f44959c9ffb88&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
+            </div>
+        </div>
+        <div class="contacts-tab active" id="contact-form">
+            <div id="afd_wrap_contactForm" class="api-formdesigner afd-theme-simple afd-color-off">
+                <div class="afd-sys-alert"></div>
+                <form id="contactForm" name="contactForm" action="/contacts/" method="POST" class="afd-form"
+                    autocomplete="off">
+                    <input type="hidden" name="sessid" id="sessid" value="0093980772d4ee331affd6b4d1d7bac4" />
+                    <input type="text" name="ANTIBOT[NAME]" value="" autocomplete="off" class="afd-antibot">
+                    <input type="hidden" name="API_FD_AJAX" value="contactForm">
+                    <input type="hidden" name="UNIQUE_FORM_ID" value="contactForm">
+
+                    <div class="contact-form-fields">
+                        <div class="contact-form-field  afd-row-required " data-field="NAME">
+                            <div class="afd-controls">
+                                <div class="afd-control">
+                                    <input type="text" name="FIELDS[NAME]" id="contactform_field_name"
+                                        placeholder="Имя*" class="afd-field-name" value="">
+                                </div>
+                                <div class="afd-error"></div>
+                            </div>
+                        </div>
+                        <div class="contact-form-field  afd-row-required form-item-min" data-field="PHONE">
+                            <div class="afd-controls">
+                                <div class="afd-control">
+                                    <input type="text" name="FIELDS[PHONE]" id="contactform_field_phone"
+                                        placeholder="Телефон*" class="afd-field-phone" value="">
+                                </div>
+                                <div class="afd-error"></div>
+                            </div>
+                        </div>
+                        <div class="contact-form-field  afd-row-required form-item-min" data-field="EMAIL">
+                            <div class="afd-controls">
+                                <div class="afd-control">
+                                    <input type="text" name="FIELDS[EMAIL]" id="contactform_field_email"
+                                        placeholder="Email*" class="afd-field-email" value="">
+                                </div>
+                                <div class="afd-error"></div>
+                            </div>
+                        </div>
+                        <div class="contact-form-field  " data-field="MESSAGE">
+                            <div class="afd-controls">
+                                <div class="afd-control">
+                                    <textarea name="FIELDS[MESSAGE]" id="contactform_field_message"
+                                        class="afd-field-message" data-autoresize placeholder="Ваше сообщение" cols="30"
+                                        rows="0"></textarea>
+                                </div>
+                                <div class="afd-error"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-item-min privacy">
+                            <input id="PRIVACY_ACCEPTED" type="checkbox" name="PRIVACY_ACCEPTED" value="Y"
+                                class="checkbox" checked>
+                            <label for="PRIVACY_ACCEPTED">
+                                Я принимаю <a class="privacy_link" rel="nofollow" href="/terms_of_use/"
+                                    target="_blank">условия соглашения</a>
+                            </label>
+                        </div>
+
+
+                        <div class="form-item-min text-right">
+                            <button type="submit" name="API_FD_SUBMIT" value="Y" class="contact-form-submit">
+                                <span>Отправить</span>
+                            </button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+            <!--form end-->
+
+        </div>
+
+    </div>
+</main>
